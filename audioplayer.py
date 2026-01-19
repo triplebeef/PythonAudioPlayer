@@ -124,16 +124,7 @@ class TooltipMP3Player:
         self.hotkey_stop_event = threading.Event()
         self.hotkey_thread = None
 
-
-        """
-        progress slider
-
-        """
-        #self.slider = tk.Scale(root, from_=0, to=100, orient="horizontal",
-        #                       variable=self.position, command=self.seek, length=380,
-        #                       label="Slider")
-        #self.slider.pack(pady=5)
-
+        
         controls = tk.Frame(root)
         controls.pack()
         prev_btn = tk.Button(controls, text="⏮ Previous", command=self.previous_track)
@@ -616,3 +607,4 @@ if __name__ == "__main__":
         pass
     app = TooltipMP3Player(root)
     root.mainloop()
+
