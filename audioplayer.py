@@ -279,7 +279,6 @@ class TooltipMP3Player:
                     continue
 
                 self.files.append((file_path, length))
-                #self.listbox.insert(tk.END, f)
                 self.listbox.insert(tk.END, os.path.splitext(f)[0].replace("_", " "))
 
         self.filtered_indices = list(range(len(self.files)))
@@ -607,4 +606,5 @@ if __name__ == "__main__":
         pass
     app = TooltipMP3Player(root)
     root.mainloop()
+
 
