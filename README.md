@@ -1,2 +1,2 @@
 # PythonAudioPlayer
-Basic python audio player.
+Simple python audio player.
